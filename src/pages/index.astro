@@ -3,19 +3,67 @@
 ---
 
 <html lang="en" data-theme="light">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>#TAK dla Parku</title>
-	</head>
-	<body class="content-center min-h-screen">
-        <div class="flex flex-col gap-4 items-center">
-            <h1 class="text-4xl font-semibold">#TAK dla Parku</h1>
-            <button class="btn btn-outline btn-success btn-wide rounded-full text-xl">
-                Podpisz petycję!
-            </button>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>#TAK dla Parku</title>
+    </head>
+    <body>
+
+        <!-- hero -->
+        <div class="hero absolute w-full h-[90vh]">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-neutral-content text-center">
+                <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">#TAK dla Parku</h1>
+                    <p class="mb-5 text-lg">
+                        Nie pozwólmy nowemu Prezydentowi, Jackowi
+                        Wojciechowiczowi, odebrać nam szansy na zielone
+                        serce Raciborza! Podpisz petycję i walcz o park,
+                        który ma być naszą wspólną przestrzenią do
+                        odpoczynku.
+                    </p>
+                    <button
+                        class="btn btn-lg btn-success btn-wide rounded-full"
+                    >
+                        Podpisz petycję!
+                    </button>
+                </div>
+            </div>
         </div>
-	</body>
+
+        <!-- carousel -->
+        <div class="carousel w-full h-[90vh]">
+            <div id="carousel-item-1" class="carousel-item w-full">
+                <img src="/carousel.img-1.jpg" class="object-cover w-full" />
+            </div>
+            <div id="carousel-item-2" class="carousel-item w-full">
+                <img src="/carousel.img-2.jpg" class="object-cover w-full" />
+            </div>
+            <div id="carousel-item-3" class="carousel-item w-full">
+                <img src="/carousel.img-3.jpg" class="object-cover w-full" />
+            </div>
+            <div id="carousel-item-4" class="carousel-item w-full">
+                <img src="/carousel.img-4.jpg" class="object-cover w-full" />
+            </div>
+            <div id="carousel-item-5" class="carousel-item w-full">
+                <img src="/carousel.img-6.jpg" class="object-cover w-full" />
+            </div>
+            <div id="carousel-item-6" class="carousel-item w-full">
+                <img src="/carousel.img-6.jpg" class="object-cover w-full" />
+            </div>
+        </div>
+        <div class="flex w-full justify-center gap-2 py-2">
+            <a href="#carousel-item-1" class="btn btn-xs">1</a>
+            <a href="#carousel-item-2" class="btn btn-xs">2</a>
+            <a href="#carousel-item-3" class="btn btn-xs">3</a>
+            <a href="#carousel-item-4" class="btn btn-xs">4</a>
+            <a href="#carousel-item-5" class="btn btn-xs">5</a>
+            <a href="#carousel-item-6" class="btn btn-xs">6</a>
+        </div>
+
+        <!-- timeline -->
+    </body>
 </html>
