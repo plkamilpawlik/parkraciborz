@@ -7,12 +7,26 @@ import Timeline from "./index.timeline.astro";
 
 <html lang="en" data-theme="light" class="scroll-smooth">
     <head>
-        <meta charset="utf-8" />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <meta name="viewport" content="initial-scale=1, , viewport-fit=coverr" />
-        <meta name="generator" content={Astro.generator} />
+        <!-- Google tag (gtag.js) -->
+        <script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-MRY8W4PN2H"></script>
+        <script type="text/partytown">
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-        
+            gtag("config", "G-MRY8W4PN2H");
+        </script>
+
+        <!-- essentials -->
+        <meta charset="utf-8" />
+        <meta name="generator" content={Astro.generator} />
+        <meta
+            name="viewport"
+            content="initial-scale=1, , viewport-fit=coverr"
+        />
+
         <!-- social media -->
         <meta
             property="og:image"
@@ -22,11 +36,8 @@ import Timeline from "./index.timeline.astro";
             property="og:type"
             content="website"
         />
-        <meta
-            property="og:url"
-            content="https://parkraciborz.pl/"
-        />
-        
+        <meta property="og:url" content="https://parkraciborz.pl/" />
+
         <!-- twitter / x -->
         <meta name="twitter:card" content="summary_large_image" /><meta
             name="twitter:description"
@@ -38,6 +49,7 @@ import Timeline from "./index.timeline.astro";
         />
         <meta name="twitter:title" content="#TAK dla Parku" />
 
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <title>#TAK dla Parku</title>
     </head>
     <body>
